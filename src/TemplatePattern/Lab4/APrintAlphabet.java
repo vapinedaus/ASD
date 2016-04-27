@@ -1,4 +1,4 @@
-package TemplatePatternLab4;
+package TemplatePattern.Lab4;
 
 public abstract class APrintAlphabet {
 	

@@ -1,4 +1,4 @@
-package Proxy.Choice1;
+package Proxy.c1;
 
 import java.util.Arrays;
 import java.util.Enumeration;

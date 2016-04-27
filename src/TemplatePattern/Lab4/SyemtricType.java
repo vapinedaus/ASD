@@ -1,4 +1,4 @@
-package TemplatePatternLab4;
+package TemplatePattern.Lab4;
 public enum SyemtricType {
 	
 	Vertical,None,Horizontal

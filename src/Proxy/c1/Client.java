@@ -1,4 +1,4 @@
-package Proxy.Choice1;
+package Proxy.c1;
 
 public class Client {
 
