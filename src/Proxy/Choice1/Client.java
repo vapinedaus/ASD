@@ -4,7 +4,7 @@ public class Client {
 
 	public static void main(String[] args) {
 
-		ITable rowLockTableProxy = new RowLockTableProxy(new Table());
+		ITable rowLockTableProxy = new RowLockTableProxy();
 		System.out.println("Number of rows: " +  rowLockTableProxy.numOfRows());
 		System.out.println("Row[0]: " + rowLockTableProxy.getRow(0));
 		System.out.println("-----------------------------------------------------");

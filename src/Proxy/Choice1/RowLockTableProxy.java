@@ -6,10 +6,10 @@ public class RowLockTableProxy implements ITable {
 
 	
 	/*Constructor-  lock row mechanism*/
-	public RowLockTableProxy(Table toLock) {
-		realTable = toLock;
-		locks = new Integer[toLock.numOfRows()];
-		for (int row = 0; row < toLock.numOfRows(); row++)
+	public RowLockTableProxy() {
+		realTable = new Table();
+		locks = new Integer[realTable.numOfRows()];
+		for (int row = 0; row < realTable.numOfRows(); row++)
 			locks[row] = new Integer(row);
 	}
 
