@@ -1,7 +1,6 @@
 package Iterator.Lab6;
 
 public interface Functor<T> {
-	 public boolean isEmpty();
-
+	 public boolean isNotBlank();
 	
 }

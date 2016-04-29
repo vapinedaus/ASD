@@ -33,24 +33,22 @@ public class NameRepository implements IContainer {
 		}
 
 		@Override
-		public Functor item(String[][] i) {
+		public Functor item(String[] i) {
+			
+		  return new Functor()
+				  {
 
-			return new Functor<String[][]>()
-					{
-				     
 					@Override
-					public boolean isEmpty() {
+					public boolean isNotBlank() {
 						// TODO Auto-generated method stub
-						if (i[0]=="-" && i[1]=="-" )
+						if (!i[0].equals("-") && !i[1].equals("-"))
 						{
-							
+						  return true;
 						}
 						return false;
 					}
-				
-					};
-			
-					
+			  
+				  };
 			
 		}
 
