@@ -1,4 +1,4 @@
-package Prototype.Serialize.Lab4;
+package Prototype.Lab4;
 
 public class Client {
 

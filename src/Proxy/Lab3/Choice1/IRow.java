@@ -1,4 +1,4 @@
-package Proxy.c1;
+package Proxy.Lab3.Choice1;
 
 /*Dummy Subject*/
 public interface IRow {

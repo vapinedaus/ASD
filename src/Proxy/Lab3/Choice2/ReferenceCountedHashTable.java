@@ -1,4 +1,4 @@
-package Proxy.Choice2;
+package Proxy.Lab3.Choice2;
 
 import java.util.Hashtable;
 /*Real Subject*/

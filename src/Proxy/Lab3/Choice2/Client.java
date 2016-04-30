@@ -1,4 +1,4 @@
-package Proxy.Choice2;
+package Proxy.Lab3.Choice2;
 
 public class Client {
 	public static void main(String[] args) {
