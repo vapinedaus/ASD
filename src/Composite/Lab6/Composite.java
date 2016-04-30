@@ -6,9 +6,10 @@ import java.util.List;
 public class Composite extends Component {
 
 	
-	public Composite(String tag)
+	public Composite(String tag,Component parent)
 	{
 		super.tag = tag;
+		super.parent=parent;
 	}
 	
 	

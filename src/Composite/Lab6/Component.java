@@ -9,6 +9,8 @@ public abstract class Component {
 
     protected String tag;
     
+    protected Component parent;
+    
     public abstract void print();
 
 	public int getSize() {

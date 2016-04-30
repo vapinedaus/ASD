@@ -10,7 +10,7 @@ public class Client {
 
     public static void main(String args[]) {
     	
-        Component parent = new Composite("HTML DOM");
+        Component parent = new Composite("HTML DOM",null);
         parseHTML(input, parent);
         parent.print();
     	
@@ -58,13 +58,13 @@ public class Client {
             Component toAdd;
             String tag = input.substring(1, input.indexOf(">"));
             //toAdd = new Composite(tag);
-            toAdd = new Composite(tag);
+            toAdd = new Composite(tag,parent);
             String endTag = "</" + tag + ">";
             String inner = input.substring(input.indexOf(">") + 1, input.indexOf(endTag));
           
             parseHTML(inner, toAdd);
             if (toAdd.getSize() == 0) {
-                toAdd = new Leaf(tag);
+                toAdd = new Leaf(tag,parent);
             }
             parent.add(toAdd);
             input = input.substring(input.indexOf(endTag) + endTag.length(), input.length());
